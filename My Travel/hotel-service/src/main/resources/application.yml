@@ -1,0 +1,18 @@
+
+server:
+  port: 8001
+
+
+spring:
+  data:
+    mongodb:
+      database: hotel
+      host: travelmongo
+      port: 27017
+
+  application:
+    name: HOTEL-SERVICE
+
+
+
+

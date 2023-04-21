@@ -1,0 +1,37 @@
+<div class="container">
+    <form (submit)="onSubmit()">
+      <div class="form-group">
+        <label for="hotelName">Hotel Name:</label>
+        <input type="text" class="form-control" placeholder="Enter Owner Name" name="hotelName" [(ngModel)]="model.hotelName">
+      </div>
+      <div class="form-group">
+        <label for="mobilenumber">Mobile Number:</label>
+        <input type="number" class="form-control" placeholder="Enter Mobile Number" name="mobileNumber" [(ngModel)]="model.mobileNumber">
+      </div>
+      <div class="form-group">
+        <label for="hotelname">Hotel city:</label>
+        <input type="text" class="form-control" placeholder="Enter Hotel City" name="city" [(ngModel)]="model.city">
+      </div>
+      <div class="form-group">
+        <label for="state">Hotel state:</label>
+        <input type="text" class="form-control" placeholder="Enter Hotel State" name="state" [(ngModel)]="model.state">
+      </div>
+      <div class="form-group">
+        <label for="description">Hotel Description:</label>
+        <input type="text" class="form-control" placeholder="Enter Hotel Description" name="description" [(ngModel)]="model.description">
+      </div>
+      <div class="form-group">
+        <label for="imageLink">Hotel image Link:</label>
+        <input type="text" class="form-control" placeholder="Enter Image Link" name="imageLink" [(ngModel)]="model.imageLink">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" placeholder="Enter email" name="email" [(ngModel)]="model.email">
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" class="form-control" placeholder="Enter password" name="password" [(ngModel)]="model.password">
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+</div>

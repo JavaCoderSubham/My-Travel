@@ -1,0 +1,17 @@
+server:
+  port: 8002
+
+spring:
+  application:
+    name: USER-SERVICE
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/angular_springboot
+    username: root
+    password: Subham@1997
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update

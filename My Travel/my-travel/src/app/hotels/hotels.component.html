@@ -1,0 +1,35 @@
+<div class="container" style="display: flex; justify-content: space-between;">
+    <div class="row" *ngFor="let hotel of hotelDetails">
+
+        <a href="">
+            <div class="card" style="width: 18rem;" >
+                <img class="card-img-top" [src]="hotel.imageLink" width="304" height="236" >
+                <div class="card-body">
+                  <h5 class="card-title">{{hotel.hotelName | uppercase}}</h5>
+                  <p class="card-text">{{hotel.description}}</p>
+                  <a routerLink="/hotel/details" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </a>
+    
+        <!-- <div class="col-xs-4">
+            <img [src]="hotel.imageLink" class="img-rounded" width="304" height="236">
+        </div>
+        <div class="col-xs-8 content">
+            <div class="main">
+                <h2>Hotel Name: <span class="title">{{hotel.hotelName | uppercase}}</span></h2>
+                <p>{{hotel.description}}</p>
+            </div>
+            <div class="address">
+                <h3>Hotel Address</h3>
+                <p>Hotel City: <span>{{hotel.city}}</span></p>
+                <p>Hotel state: <span>{{hotel.state}}</span></p>
+            </div>
+            <div class="contact">
+                <h3>Hotel Contact Details</h3>
+                <p>Hotel Number: <span>{{hotel.mobileNumber}}</span></p>
+                <p>Hotel Email: <span>{{hotel.email}}</span></p>
+            </div>
+        </div> -->
+    </div>
+</div>

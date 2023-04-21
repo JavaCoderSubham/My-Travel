@@ -22,20 +22,20 @@ const routes: Routes = [
   },
   {
     component: HotelsComponent,
-    path: 'home'
+    path: ''
   },
   {
     component: HotelDetailsComponent,
-    path: "hotel/details"
+    path: "home/details"
   },
   {
     component: HotelRegistrationComponent,
-    path: 'creat-hotel'
+    path: 'create-hotel'
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {useHash: true})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

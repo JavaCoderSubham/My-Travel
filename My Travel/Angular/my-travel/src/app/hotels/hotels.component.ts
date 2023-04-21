@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { HotelDetailsComponent } from './hotel-details/hotel-details.component';
 
 @Component({
   selector: 'app-hotels',
@@ -9,6 +10,7 @@ import { HttpClient } from '@angular/common/http';
 export class HotelsComponent {
 
   hotelDetails:any;
+  
 
   constructor(private http:HttpClient) {
     
@@ -20,6 +22,10 @@ export class HotelsComponent {
       this.hotelDetails = data;
       console.log(data)
     })
+  }
+
+  onClientGet(hotelId:string) {
+    // this.hotelDetailsCompoment.findByIdHotel();
   }
 
 }

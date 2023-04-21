@@ -1,0 +1,22 @@
+version: "3.1"
+services:
+  travelmongo:
+    image: mongo:latest
+    container_name: "travelmongo"
+    ports:
+      - 27017:27017
+  hotel-service:
+    image: subhamkrgupta/hotel-service:1.2
+    container_name: "hotel-service"
+    ports:
+      - 8001:8001
+    links:
+      - travelmongo
+  my-travel:
+    image: subhamkrgupta/my-travel:1.2
+    container_name: "my-travel"
+    ports:
+      - 80:80
+    links:
+      - hotel-service
+
